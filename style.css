@@ -1,0 +1,65 @@
+body {
+    padding: 10vh 20vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 3vw;
+    height: 80vh;
+    width: 60vw;
+    border-radius: 5%;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+}
+
+#add-tag-area {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 10%;
+    width: 100%;
+}
+
+#tag-input {
+    flex-basis: 70%;
+    font-size: 1.5em;
+}
+
+#tag-add-btn {
+    flex-basis: 25%;
+    background-color: lime;
+    font-size: 1.5em;
+}
+
+#tag-list {
+    flex-basis: 85%;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    word-wrap: none;
+}
+
+.tag {
+    margin: 1vh 1vw;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    padding: 1vh 1vw;
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+
+.tag-delete-btn {
+    margin-left: 1vw;
+    border-radius: 30%;
+    color: red;
+    border: 1px solid red;
+    outline: none;
+}
