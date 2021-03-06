@@ -13,8 +13,8 @@ body {
     height: 80vh;
     width: 60vw;
     border-radius: 5%;
-    background-color: whitesmoke;
     border: 1px solid gray;
+    background-color: whitesmoke;
 }
 
 #add-tag-area {
@@ -36,30 +36,49 @@ body {
 }
 
 #tag-list {
-    flex-basis: 85%;
-    background-color: lightgoldenrodyellow;
-    border: 1px solid gray;
-    box-sizing: border-box;
+    flex-basis: 80%;
+    padding: 1vh 1vw;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid gray;
     overflow-y: auto;
-    word-wrap: none;
 }
 
 .tag {
+    display: inline-flex;
     margin: 1vh 1vw;
-    display: inline-block;
-    width: fit-content;
-    height: fit-content;
     padding: 1vh 1vw;
+    align-items: center;
     background-color: lightgreen;
     border: 1px solid green;
+    font-size: 1.5em;
 }
 
 .tag-delete-btn {
-    margin-left: 1vw;
-    border-radius: 30%;
-    color: red;
-    border: 1px solid red;
+    font-size: 1.2em;
+    margin-left: 2vw;
+    padding: 0;
+    color: green;
+    background-color: lightgreen;
+    border: none;
     outline: none;
+    transition: color 0.2s linear;
+    
+}
+
+.tag-delete-btn:hover {
+    color: red;
+}
+
+#extra-tools {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#new-list-btn {
+    background-color:orange;
+    font-size: 1.5em;
 }
